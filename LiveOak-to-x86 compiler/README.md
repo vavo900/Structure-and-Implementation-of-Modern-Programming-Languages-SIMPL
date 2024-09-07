@@ -1,8 +1,6 @@
 
 # LiveOak to x86 Compiler
 
-This repository contains the implementation of the LiveOak to x86 Compiler.
-
 ## Introduction
 
 This programming assignment involves retargeting the compiler for LiveOak to generate code for x86 architecture. 
