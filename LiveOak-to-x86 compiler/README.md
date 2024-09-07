@@ -1,7 +1,7 @@
 
 # LiveOak to x86 Compiler
 
-This repository contains the implementation of the LiveOak to x86 Compiler as part of the assignment for C S 395T SIMPL, Fall 2021.
+This repository contains the implementation of the LiveOak to x86 Compiler.
 
 ## Introduction
 
@@ -36,11 +36,25 @@ The compiler should accept two arguments:
 java -jar compiler.jar input_file.lo output_file.s
 ```
 
-## Download and Preparation
+### Download and Preparation
 
 1. **SaM Library** (v 2.6.3) for the lexer can be downloaded from the provided links.
 2. **Public test cases** for the compiler are available for download. The test cases are continuously updated.
    - It is recommended to create additional test cases to verify your compiler.
+
+### Implementation
+
+Make sure that your compiler is in the Java class `assignment2.LiveOakCompiler`. 
+- The first argument is the input LiveOak program file, and the second argument is the output file that contains the x86 assembly code.
+- You may want to manage complexity by working through different levels of the language incrementally.
+
+## Hand-in Instructions
+
+Submit the following via **Gradescope**:
+1. `compiler.jar`: A runnable JAR file.
+2. `source.zip`: A ZIP file containing all your source files, including any libraries you used.
+
+Ensure that your submission can be run with the command mentioned in the **Evaluation** section.
 
 ## Evaluation
 
@@ -56,15 +70,7 @@ This command reads the LiveOak program from `test1.lo`, generates the SaM progra
    Use SASM to simulate the execution of the generated x86 code. 
    The exit status (return value of `main()`) will be used to evaluate the correctness of your compiler.
 
-## Hand-in Instructions
-
-Submit the following via **Gradescope**:
-1. `compiler.jar`: A runnable JAR file.
-2. `source.zip`: A ZIP file containing all your source files, including any libraries you used.
-
-Ensure that your submission can be run with the command mentioned in the **Evaluation** section.
-
-## Grading
+### Grading
 
 This assignment contributes **24%** to the final course grade. 
 Test cases are assigned difficulty levels:
